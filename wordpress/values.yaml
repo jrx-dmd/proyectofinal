@@ -96,40 +96,18 @@ image:
 ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
 ##
 
-## @param wordpressUsername WordPress username
-##
-wordpressUsername: user
-## @param wordpressPassword WordPress user password
-## Defaults to a random 10-character alphanumeric string if not set
-##
-wordpressPassword: ""
-## @param existingSecret Name of existing secret containing WordPress credentials
-## NOTE: Must contain key `wordpress-password`
-## NOTE: When it's set, the `wordpressPassword` parameter is ignored
-##
+##cCONFIGURACIÓN WORDPRESS 
+
+wordpressUsername: admin
+wordpressPassword: admin
 existingSecret: ""
-## @param wordpressEmail WordPress user email
-##
-wordpressEmail: user@example.com
-## @param wordpressFirstName WordPress user first name
-##
-wordpressFirstName: FirstName
-## @param wordpressLastName WordPress user last name
-##
-wordpressLastName: LastName
-## @param wordpressBlogName Blog name
-##
+wordpressEmail: davidmoyaduran@gmail.com
+wordpressFirstName: david
+wordpressLastName: moya duran
 wordpressBlogName: User's Blog!
-## @param wordpressTablePrefix Prefix to use for WordPress database tables
-##
 wordpressTablePrefix: wp_
-## @param wordpressScheme Scheme to use to generate WordPress URLs
-##
 wordpressScheme: http
-## @param wordpressSkipInstall Skip wizard installation
-## NOTE: useful if you use an external database that already contains WordPress data
-## ref: https://github.com/bitnami/bitnami-docker-wordpress#connect-wordpress-docker-container-to-an-existing-database
-##
+
 wordpressSkipInstall: false
 ## @param wordpressExtraConfigContent Add extra content to the default wp-config.php file
 ## e.g:
